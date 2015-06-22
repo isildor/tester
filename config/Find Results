@@ -1,0 +1,29 @@
+Searching 1 file for "rayapp"
+
+/Users/jmolayem/Desktop/rayapp/config/database.yml:
+   24  development:
+   25    <<: *default
+   26:   database: jmolayem_development
+   27  
+   28    # The specified database role being used to connect to postgres.
+   ..
+   30    # When left blank, postgres will use the default role. This is
+   31    # the same name as the operating system user that initialized the database.
+   32:   #username: jmolayem
+   33  
+   34    # The password associated with the postgres role (username).
+   ..
+   58  test:
+   59    <<: *default
+   60:   database: jmolayem_test
+   61  
+   62  # As with config/secrets.yml, you never want to store sensitive information,
+   ..
+   81  production:
+   82    <<: *default
+   83:   database: jmolayem_production
+   84:   username: jmolayem
+   85:   password: <%= ENV['JMOLAYEM_DATABASE_PASSWORD'] %>
+   86  
+
+6 matches in 1 file
